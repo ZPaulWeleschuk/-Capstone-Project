@@ -1,0 +1,107 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+function mapList()
+{
+	var report="";
+	
+	var list = document.getElementById("t1");
+	
+	report += "NodeName:" + list.nodeName + "\n";
+	
+	var items = list.getElementsByTagName("li");
+	
+	for (var i=0; i<items.length; i++)
+	{
+		report += "\tITEM:" + items[i].innerHTML + "\n";
+	}
+	
+	alert(report);
+}
+
+//------------------------
+function mapList2()
+{
+	var report="";
+	var node = document.getElementById("t1");
+	
+	node = node.firstChild;
+	
+	do
+	{
+		report += node.nodeName + "," + node.innerHTML + "\n";
+	} while (node=get_nextSibling(node));
+	
+	alert(report);
+}
+
+//Helper to iterate through list
+function get_nextSibling(node)
+{
+	var next=node.nextSibling;
+	while (next!=null && next.nodeType!=1)
+	{
+		next=next.nextSibling;
+	}
+	return next;
+}
+//------------------------
+
+function addItemBefore()
+{
+	var list = document.getElementById("t1");
+	
+	var node = list.firstChild;
+	
+	//Create new "li" element
+	var newItem = document.createElement("li");
+
+	//Create text node and associate it with "li" element
+	var newText=document.createTextNode("BEFORE");
+	newItem.appendChild(newText);
+	
+	//Add new "li" (and associated text node) to START of list
+	list.insertBefore(newItem, list.childNodes[0]);
+}
+
+function addItemAfter()
+{
+	var list = document.getElementById("t1");
+	
+	var node = list.firstChild;
+	
+	//Create new "li" element
+	var newItem = document.createElement("li");
+
+	//Create text node and associate it with "li" element
+	var newText=document.createTextNode("AFTER");
+	newItem.appendChild(newText);
+	
+	//Add new "li" (and associated text node) to END of list
+	list.appendChild(newItem, list.childNodes[0]);
+	
+}
+
+function deleteItemBefore()
+{
+	var list = document.getElementById("t1");
+	var node = list.firstChild;
+	list.removeChild(node);
+}
+</script>
+
+</head>
+
+<body>
+
+<ul id="t1"><li>Item 1</li><li>Item 2</li></ul>
+
+<input type="button" value="Map list" onclick="mapList2()">
+<input type="button" value="Add before" onclick="addItemBefore()">
+<input type="button" value="Add after" onclick="addItemAfter()">
+<input type="button" value="Delete Before" onclick="deleteItemBefore()">
+</body>
+
+</html>
