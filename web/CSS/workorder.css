@@ -1,0 +1,48 @@
+/* 
+    Author     : Jaehan Kim
+*/
+
+/** Styles used only on the work order page **/
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+
+}
+
+.table table td input,.table table td select, .table table td select option{
+    font-family: "72";
+}
+
+.form__operations td input, .form__operations td select {
+    width: 100%;
+}
+
+
+.submitBtn__ind {
+    
+    width: fit-content !important;
+}
+
+
+  .closingNotesTable tr, .closingNotesTable td{
+      border: none; 
+      padding: 0;
+      text-align: left;
+  }
+  
+.closingNotesTable__textArea {
+     font-family: "72";
+  }
+  
+.closingNotesTable tr:hover {
+      background: transparent !important;
+  }
+  
+  .closingNotesTable td:hover{
+        background: transparent !important;
+  }
+
+

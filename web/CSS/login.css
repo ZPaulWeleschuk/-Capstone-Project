@@ -1,0 +1,55 @@
+/*
+ * @author Jaehan Kim
+*/
+
+/** Log-in form styling **/
+
+body {
+    background: rgb(168,214,210);
+    background: linear-gradient(90deg, rgba(168,214,210,1) 0%, rgba(176,229,229,1) 21%, rgba(0,212,255,1) 100%);
+}
+
+.header{
+    background: transparent;
+    padding: 1rem 1rem;
+}
+
+
+/* Styling for Input Form*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container input {
+    margin-bottom: 1em;
+    padding: 1rem;
+    height: 3em;
+    width: 15em;
+}
+
+.container .submitBtn{
+    font-family: "72";
+  background: #0a6ed1;
+  color: white;
+  border: 1px solid #0a6ed1;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px;
+
+}
+.container .submitBtn:hover {
+    background: white;
+    color: #0a6ed1;
+    border: 1px solid #0a6ed1;
+    cursor: pointer;
+  }
+
+
+  /* Error Message */
+  .container .message {
+      color: rgb(104, 31, 31);
+      font-weight: 700;
+  }

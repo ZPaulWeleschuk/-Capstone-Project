@@ -1,0 +1,16 @@
+/*
+    Author     : Jaehan Kim
+*/
+
+.container {
+    padding: 0 35px;
+}
+
+.container h1{
+    padding: 15px 0;
+}
+
+.table {
+    width: auto;
+    padding: 15px 0;
+}

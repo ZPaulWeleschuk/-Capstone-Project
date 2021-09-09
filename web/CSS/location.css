@@ -1,0 +1,27 @@
+
+/* 
+    Created on : Jul 26, 2021, 12:04:24 PM
+    Author     : Laura Diaz
+*/
+.show_direction{
+    margin-bottom: 0.3em;
+    background: #f7f7f7;
+    padding: 15px 35px;
+    box-sizing: border-box;
+}
+
+.showDirectionHeader{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#showDirectionHeaderImage{
+    margin-left: 0.5em;
+    height: 1.2em;
+}
+
+.show_direction .location_inactive {
+  display: none !important;
+  marging: 1em;
+}

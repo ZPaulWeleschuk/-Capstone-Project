@@ -1,0 +1,11 @@
+/*
+ * @author Jaehan Kim
+*/
+
+/** Styles used only on the work center page **/
+.workOrder__form .workOrder_inactive {
+    display: none !important;
+  }
+
+
+ 

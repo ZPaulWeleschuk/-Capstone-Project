@@ -1,0 +1,33 @@
+/*
+ * @author Jaehan Kim
+*/
+
+/*Styling for Admin.jsp especially for forms */
+/* Admin Form */
+
+
+.notification__form {
+    margin-bottom: 0.3em;
+}
+
+.notification__form .form__select {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+
+  margin-bottom: 1.5rem;
+}
+
+
+.notification__form .notification_inactive {
+  display: none !important;
+}
+
+.user__form .user_inactive {
+    display: none !important;
+}
+
+.message {
+    color: red;
+}
+  
+  /* /Admin Form */
