@@ -19,7 +19,7 @@ We have created an application that solves the issues with managing these work o
 
 ### Internal Structure:
 
-* Java based web application
+* Java based web application following MVC design pattern
 * Apache Tomcat web container
 * MySQL database accessed with JPA to provide object-relational mapping
 * Argon2 with Password4j to securely store and check user passwords
